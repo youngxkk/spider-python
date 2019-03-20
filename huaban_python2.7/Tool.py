@@ -10,7 +10,6 @@ def getLastFromUrl(url):
         return url[url.rfind('/') + 1:]
     return ''
 
-
 def crawl(pageurl, times=0):
     if times > 5:
         log_warn("page failed:" + pageurl)
@@ -28,7 +27,6 @@ def crawl(pageurl, times=0):
     except ssl.SSLError, e:
         return crawl(pageurl, times + 1)
 
-
 def down(url, file):
     try:
         page = urllib2.urlopen(url, None, 100)
@@ -45,21 +43,20 @@ def down(url, file):
     except socket.timeout, e:
         return False
 
-
 def log_info(d):
     info = now() + d
     logging.info(info)
-
 
 def log_warn(d):
     warn = now() + d
     logging.warn(warn)
     print warn
 
-
 def now():
     return time.strftime('%Y-%m-%d %H:%M:%S ', time.localtime(time.time()))
 
-
 if __name__ == '__main__':
     pass
+
+
+# -*- yahong & yangxingkong-2018-12-20 -*-
