@@ -9,16 +9,16 @@ from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 # 需要处理的文件夹,改你的文件夹的路径
-folder = '/Users/sea/Desktop/0/'
+folder = '/Users/Youngxkk/Pictures/maxwallpaper/'
 # folder = '/Users/sea/Desktop/0/'
 
 # 处理图片后输出的文件夹
-outPath = '/Users/sea/Desktop/excellent/'
+outPath = '/Users/Youngxkk/Desktop/excellent/'
 if not os.path.exists(outPath):  #如果不存在则创建一个
 	os.makedirs(outPath)
 
 # 处理后需要在次筛选的文件
-outPath2 = '/Users/sea/Desktop/medium/'
+outPath2 = '/Users/Youngxkk/Desktop/medium/'
 if not os.path.exists(outPath2): 
 	os.makedirs(outPath2)
 
